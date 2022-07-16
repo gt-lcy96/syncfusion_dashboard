@@ -51,7 +51,7 @@ const App = () => {
             <div className="w-0 dark:bg-secondary-dark-bg">Sidebar False</div>
           )}
           <div
-            className={`dark:bg-main-dark-bg bg-main-bg min-h-screen w-full ${
+            className={`dark:bg-main-bg bg-main-bg min-h-screen ${
               activeMenu ? 'md:ml-72' : 'flex-2'
             }`}></div>
 

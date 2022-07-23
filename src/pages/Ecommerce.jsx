@@ -1,6 +1,6 @@
 import React from 'react';
 import { Stacked, Pie, Button, SparkLine } from '../components';
-import { earningData, SparkLineAreaData, ecomPieChartData } from '../data/dummy';
+import { earningData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
 import { useStateContext } from '../context/ContextProvider';
 import { GoPrimitiveDot } from 'react-icons/go';
 
@@ -86,17 +86,19 @@ const ECommerce = () => {
                 </div>
               </div>
 
-              {/* <div className="mt-5">
+              {console.table(SparklineAreaData)}
+
+              <div className="mt-5">
                 <SparkLine
                   currentColor="blue"
                   id="line-sparkline"
-                  type="line"
+                  type="Line"
                   height="80px"
                   width="250px"
-                  data={SparkLineAreaData}
+                  data={SparklineAreaData}
                   color="blue"
                 />
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

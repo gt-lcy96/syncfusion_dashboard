@@ -4,7 +4,7 @@ import { earningData, SparklineAreaData, ecomPieChartData } from '../data/dummy'
 import { useStateContext } from '../context/ContextProvider';
 import { GoPrimitiveDot } from 'react-icons/go';
 
-const ECommerce = () => {
+const Ecommerce = () => {
   return (
     <div className="mt-12">
       <div className="flex flex-wrap lg:flex-nowrap justify-center">
@@ -106,5 +106,5 @@ const ECommerce = () => {
     </div>
   );
 };
-
-export default ECommerce;
+ 
+export default Ecommerce;

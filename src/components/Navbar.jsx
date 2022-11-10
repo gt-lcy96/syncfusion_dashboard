@@ -25,7 +25,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor}) => (
 
 const Navbar = () => {
     const {activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick,
-    screenSize, setScreenSize}  = useStateContext();
+    screenSize, setScreenSize, currentColor}  = useStateContext();
     const lightblue = '#03C9D7'
 
     useEffect(() => {
@@ -50,15 +50,15 @@ const Navbar = () => {
 
   <div className="flex justify-between p-2 md:mx-6 relative">
     <NavButton title="Menu" customFunc={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)} 
-    color="blue" icon={<AiOutlineMenu />}/>
+    color={currentColor} icon={<AiOutlineMenu />}/>
 
     <div className="flex">
         <NavButton title="Cart" customFunc={() => handleClick('cart')} 
-        color="blue" icon={<FiShoppingCart />}/>
+        color={currentColor} icon={<FiShoppingCart />}/>
         <NavButton title="Chat" customFunc={() => handleClick('chat')} 
-        color="blue" dotColor={lightblue} icon={<BsChatLeft />}/>
+        color={currentColor} dotColor={lightblue} icon={<BsChatLeft />}/>
         <NavButton title="Notification" customFunc={() => handleClick('notification')} 
-        color="blue" dotColor={lightblue} icon={<RiNotification3Line />}/>
+        color={currentColor} dotColor={lightblue} icon={<RiNotification3Line />}/>
         <TooltipComponent content="Profile" position="BottomCenter">
             <div className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg"
                 onClick={() => handleClick('userProfile')}

@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+## Description
+
+This project is to build a useful dashboard which demo the functionality of syncfusion and other commonly used components.
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
